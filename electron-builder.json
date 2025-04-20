@@ -1,0 +1,24 @@
+
+{
+  "appId": "com.mcq.tester",
+  "productName": "MCQ Tester",
+  "directories": {
+    "output": "releases"
+  },
+  "files": [
+    "dist/**/*",
+    "electron.js",
+    "package.json"
+  ],
+  "mac": {
+    "category": "public.app-category.education",
+    "target": ["dmg", "zip"]
+  },
+  "win": {
+    "target": ["nsis", "zip"]
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "category": "Education"
+  }
+}
